@@ -4,6 +4,11 @@
 ![GitHub](https://img.shields.io/github/license/yeyupiaoling/MASR)
 ![支持系统](https://img.shields.io/badge/支持系统-Win/Linux/MAC-9cf)
 
+# kevinhall的fork版修改说明
+1.在download_data目录下'数据下载.ipynb'中设置了从魔搭仓库下载国内转运的数据集，加快了下载时间。
+注：modelscope notebook约10分钟下载完成。
+2.修补增加了原作者 夜雨飘零 在requirements中pydub依赖项。
+3.在首页添加了用于启动和其他操作的Astart.ipynb(后续正在完善中）。
 # MASR流式与非流式语音识别项目
 
 MASR是一款基于Pytorch实现的自动语音识别框架，MASR全称是神奇的自动语音识别框架（Magical Automatic Speech Recognition），当前为V2版本，如果想使用V1版本，请在这个分支[r1.x](https://github.com/yeyupiaoling/MASR/tree/r1.x)。MASR致力于简单，实用的语音识别项目。可部署在服务器，Nvidia Jetson设备，未来还计划支持Android等移动设备。
