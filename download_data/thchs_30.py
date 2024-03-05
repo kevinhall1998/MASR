@@ -34,7 +34,7 @@ def prepare_dataset(url, md5sum, target_dir, annotation_path):
     """Download, unpack and create manifest file."""
     data_dir = os.path.join(target_dir, 'data_thchs30')
     if not os.path.exists(data_dir):
-        filepath = download(url, md5sum, target_dir)
+        filepath = 'ASR/data_thchs30.GZ'
         unpack(filepath, target_dir)
         os.remove(filepath)
     else:
