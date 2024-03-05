@@ -62,7 +62,7 @@ def prepare_dataset(url, md5sum, target_dir, annotation_path):
     """Download, unpack and create manifest file."""
     data_dir = os.path.join(target_dir, 'data_aishell')
     if not os.path.exists(data_dir):
-        filepath = download(url, md5sum, target_dir)
+        filepath = 'ASR/data_aishell.GZ'
         unpack(filepath, target_dir)
         # unpack all audio tar files
         audio_dir = os.path.join(data_dir, 'wav')
